@@ -59,6 +59,7 @@ for i, dt in enumerate(x.columns.to_list()):
     print("{}. {} ({})".format(i+1, dt, feature_importance[i]))
 
 # %%
+# Run linear regression
 from sklearn import linear_model
 lreg = linear_model.LinearRegression()
 lreg.fit(x_train,y_train)
